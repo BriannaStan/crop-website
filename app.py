@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return send_from_directory("static","index.html")
+    return send_from_directory("static","index-redirect.html")
 
 @app.route('/checkPicture', methods=['POST'])
 def check_picture():

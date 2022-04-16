@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content= "width=device-width, intiial-scale=1.0">
+    <title> Website </title>
+    <link rel="stylesheet" href="cvm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto+Slab:wght@200;300;400;500&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="header">
+    <nav> 
+      <div class="container">
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="cvm.html">Computer Vision Model</a>
+          <a href="model.html">Model Competition</a>
+          <a href="game.html">Play Our Game</a>
+          <a href="meet.html">Meet The Team</a>
+        </div>
+  
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="cvm.html">Computer Vision Model</a>
+      <a href="model.html">Model Competition</a>
+      <a href="game.html">Play Our Game</a>
+      <a href="meet.html">Meet The Team</a>
+    </nav>
+
+
+    <div class="text-box">
+      <h1>Computer Vision Model</h1>
+      <p>Training and validating a model to make a prediction</p>
+    </div>
+  </section>
+
+  <section class="section-1">
+    <div class="box">
+      <div class="image-col">
+        <div class="image">
+          <img src="graph.jpg">
+        </div>
+      </div>
+      <div class="text-col">
+        <h1>Overview</h1>
+        <p>This computer vision model can be of service in agriculture, where farmers can take pictures of their plants, upload them to our website and obtain a 
+          result regarding the health of their crops. We trained the image 
+          classification model on a public dataset from Kaggle that 
+          contains images of healthy and infected plants. We chose to 
+          use a convolutional neural network algorithm that gets an accuracy 
+          of 90%. However, due to the large data dimensions, we had to resize 
+          the photos to obtain a shorter running time and fit in memory. We 
+          consequently normalized the data so that all values were between 0 and 1. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2">
+    <div class="box">
+      <div class="text-col">
+        <h1>Data</h1>
+        <p>We found a corn leaf infection dataset on the open-source platform Kaggle. It 
+          contains images of healthy and infected plants in portrait and 
+          landscape formats. There are 14 GB of data, but we resized all of 
+          the pictures so we would get a shorter running time. We decreased the 
+          photo's width and length to about 12 times smaller than their original size. We have 
+          approximately 1000 healthy images and slightly over 1100 infected photos.
+        </p>
+      </div>
+      <div class="image-col">
+        <div class="image">
+          <img src="training.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="box">
+      <div class="image-col">
+        <div class="image">
+          <img src="results.png">
+        </div>
+      </div>
+      <div class="text-col">
+        <h1>Processing</h1>
+        <p> The next step was normalizing and processing the data, which brought all the values between 0 and 1. 
+          The algorithm used is a convolutional neural network model, in which we have two max-pooling layers and a dropout layer.
+          Adding a dropout layer solved the problem of overfitting.  
+          We also used dense layers to classify the 
+          results into two categories (infected or healthy). The data was split into three batches: 50% training, 20% validation, 
+          and 30% scoring. Our final accuracy was 89%. </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-heading footer-1">
+        <h2></h2>
+        <a href="index.html">Home</a>
+        <a href="cvm.html">Computer Vision Model</a>
+        <a href="model.html">Model Competition</a>
+        <a href="game.html">Play Our Game</a>
+        <a href="meet.html">Meet The Team</a>
+      </div>
+      <div class="footer-heading footer-2">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+   <script src="main.js"></script>
+</body>
+</html>

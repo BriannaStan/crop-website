@@ -35,11 +35,12 @@ def check_picture():
 
 def get_data(data_file):
     data = []
-    img_size=256
+    img_width_size=512
+    img_height_size=384
     #img_arr = cv2.imread(data_file)[...,::-1] #convert BGR to RGB format
     img_arr = cv2.imread(data_file,1)
     print(img_arr.shape)
-    resized = cv2.resize(img_arr, (img_size, img_size),interpolation = cv2.INTER_AREA) # Reshaping images to preferred size
+    resized = cv2.resize(img_arr, (img_width_size, img_height_size),interpolation = cv2.INTER_AREA) # Reshaping images to preferred size
     resized = img_to_array(resized)
     #resized = np.expand_dims(resized, axis=0)  # this is creating tensor(4Dimension)
     print(resized.shape)

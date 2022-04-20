@@ -15,6 +15,7 @@ model.summary()
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def hello_world():
     return send_from_directory("static","index-redirect.html")

@@ -250,7 +250,7 @@ nav{
 
 @media (max-width: 800px){
     .text-box{
-        top: 485px;
+        top: 405px;
     }
     .text-box h1{
         font-size: 40px;
@@ -402,4 +402,8 @@ ul{
         width: 50%;
         margin-bottom: 30px;
     }
+    .footer-col img{
+        width:70%;
+    }
+    
 }

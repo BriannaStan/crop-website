@@ -15,87 +15,6 @@ html {
     box-sizing: border-box;
 }
 
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(bg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.text-box{
-    width:90%;
-    color: #fff;
-    position: absolute;
-    top:70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-.text-box h1{
-    text-align: center;
-    font-size: 55px;
-    font-weight: 200;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Merriweather', serif;
-}
-
-.text-box p{
-    margin: 10px 0 40px;
-    text-align: center;
-    font-weight: 200;
-    font-size: 20px;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Merriweather', serif;
-}
-
-@media (max-width: 700px){
-    .text-box h1{
-        font-size: 40px;
-    }
-}
-
-.btn{
-    padding-left: 10px;
-    margin: 40px auto 0;
-}
-
-.btn a{
-    font-family: 'Merriweather', serif;
-    background-color: #fff;
-    width: 150px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: rgb(0, 0, 0);
-    position: relative;
-    z-index: 1;
-    border-radius: 20px;
-}
-
-.btn a span{
-    border-radius: 20px;
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.btn a:hover span{
-    width: 100%;
-}
-
-.btn a:hover{
-    color: rgb(255, 255, 255);
-}
-
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -103,7 +22,6 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-
 
 nav{
     position: absolute;
@@ -242,6 +160,7 @@ nav{
     color:rgb(255, 255, 255)
 }
 
+
 @media (min-width: 1000px) {
     .mobile-nav{
         display: none;
@@ -254,8 +173,95 @@ nav{
     }
 }
 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Merriweather', serif;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Merriweather', serif;
+}
+
+.btn{
+    padding-left: 10px;
+    margin: 40px auto 0;
+}
+
+.btn a{
+    font-family: 'Merriweather', serif;
+    background-color: #fff;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.btn a span{
+    border-radius: 20px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn a:hover span{
+    width: 100%;
+}
+
+.btn a:hover{
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px){
+    .text-box{
+        top: 485px;
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+}
+
 #sec-1{
-    padding: 10px;
+    padding: 5px;
 }
 
 .section-1 .row .col-md-6 .panel {
@@ -263,7 +269,7 @@ nav{
     left: 50%;
     background: rgb(255, 255, 255);
     text-align: center;
-    padding: 10vmin 5vmin 5vmin 10vmin;
+    padding: 2vmin 5vmin 5vmin 10vmin;
     font-family: 'Roboto Slab', serif;
     z-index: 1;
     max-width: 1500px;
@@ -281,60 +287,119 @@ nav{
     color: rgba(0, 0, 0, 0.7);
 }
 
+.section-2 {
+    padding: 30px;
+  }
 
-.footer-container {
-    background-color: #232933;
-    padding-bottom: 4rem;
-}
-
-.footer {
-    width:80%;
-    height: 30vh;
-    background-color:#232933; 
-    color: #fff;
+.section-2 .box{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    padding: 30px;
+    align-items: center;
+    justify-content:center;
 }
 
-.footer-heading {
-    font-family: 'Source Sans Pro', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
+.section-2 .box .image-col{
+    flex: 0 0 40%;
+}
+.section-2 .box .image-col .image{
+    max-width: 50%;
 }
 
-.footer-heading h2{
-    font-size: 25px;
-    font-weight: 850;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.section-2 .text-col{
+    padding: 2vmin 20vmin 10vmin 5vmin;
+    font-family: 'Roboto Slab', serif;
+}
+.section-2 .box .text-col h1{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 35px;
+
 }
 
-.footer-heading a {
-    font-size: 15px;
+.section-2 .box .text-col p{
+    font-family: 'Roboto Slab', serif;
     font-weight: 250;
-    color: #fff;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+.footer-container{
+    max-width: 1170px;
+    background-color: #36495f;
+    margin: auto;
+}
+
+.footer-row{
+    display:flex;
+    flex-wrap:wrap;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    padding: 40px 0;
+    background-color: #36495f;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col ul li a{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 350;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    display: block;
+    margin-bottom: 1em;
 }
 
-.footer-heading a:hover {
-    color:rgb(169, 195, 212);
-    transition: 0.3s ease-out;
+.footer-col ul li a:hover{
+    color: #a1dad7;
+
+}
+
+.footer p{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 
 
 
-@media only screen and (max-width: 768px){
+
+
+@media only screen and (max-width: 960px){
     .section-1 .row .col-md-6 .panel {
         position:initial;
         width: initial;
         height: initial;
     }
-    .footer {
-        padding-top: 2rem;
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
     }
 }

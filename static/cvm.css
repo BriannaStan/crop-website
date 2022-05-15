@@ -388,7 +388,7 @@ ul{
 
 
 
-@media only screen and (max-width: 960px){
+@media (max-width: 960px){
     .section-1 .box{
         flex-direction: column;
     }

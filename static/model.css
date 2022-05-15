@@ -347,7 +347,7 @@ ul{
     justify-content:center;
 }
 
-@media only screen and (max-width: 960px){
+@media (max-width: 960px){
     .section-1 .row .col-md-6 .panel {
         position:initial;
         width: initial;

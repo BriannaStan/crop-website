@@ -60,7 +60,7 @@
           classification model on a public dataset from Kaggle that 
           contains images of healthy and infected plants. We chose to 
           use a convolutional neural network algorithm that gets an accuracy 
-          of 91%. However, due to the large data dimensions, we had to resize 
+          of 90%. However, due to the large data dimensions, we had to resize 
           the photos to obtain a shorter running time and fit in memory. We 
           consequently normalized the data so that all values were between 0 and 1. </p>
           
@@ -98,11 +98,11 @@
       <div class="text-col">
         <h1>Processing</h1>
         <p> The next step was normalizing and processing the data, which brought all the values between 0 and 1. 
-          The algorithm used is a convolutional neural network model with 3 layers, in which we have three max-pooling layers and a dropout layer.
+          The algorithm used is a convolutional neural network model, in which we have two max-pooling layers and a dropout layer.
           Adding a dropout layer solved the problem of overfitting.  
           We also used dense layers to classify the 
           results into two categories (infected or healthy). The data was split into three batches: 50% training, 20% validation, 
-          and 30% scoring. Our final accuracy was 91%. </p>
+          and 30% scoring. Our final accuracy was 89%. </p>
       </div>
     </div>
   </section>

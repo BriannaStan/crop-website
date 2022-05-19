@@ -270,9 +270,11 @@ nav{
 
 .section-2 .box .image-col{
     flex: 0 0 40%;
+    
 }
 .section-2 .box .image-col .image{
-    max-width: 50%;
+    max-width: 100%;
+    
 }
 
 .section-2 .text-col{
@@ -386,8 +388,6 @@ ul{
 
 
 
-
-
 @media (max-width: 960px){
     .section-1 .box{
         flex-direction: column;
@@ -402,6 +402,7 @@ ul{
         position:initial;
         width: initial;
         height: initial;
+
     }
         
     .section-2 .box{
@@ -412,9 +413,9 @@ ul{
         width: initial;
         height: initial;
     }
-
-    .section-2 .box .image-col .image{
-        position: initial;
+  
+    .section-2 .box .image-col .image {
+        position: relative;
         width: initial;
         height: initial;
     }
@@ -429,10 +430,92 @@ ul{
         height: initial;
     }
 
-    .section-3 .box .image-col .image{
+    .section-3 .box .image-col .image {
+        position: relative;
+        width: initial;
+        height: initial;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col img{
+        width:70%;
+    }
+}
+
+@media (max-width: 460px){
+    .section-1 .box{
+        flex-direction: column;
+    }
+    .section-1 .box .image-col .image{
         position: initial;
         width: initial;
         height: initial;
+    }
+
+    .section-1 .box .text-col{
+        position:initial;
+        width: initial;
+        height: initial;
+
+    }
+    .section-1 .box .text-col h1{
+        font-size:20px;
+
+    }
+    .section-1 .box .text-col p{
+        font-size: 10px;
+    }
+        
+    .section-2 .box{
+        flex-direction: column;
+    }
+    .section-2 .box .text-col{
+        position:initial;
+        width: initial;
+        height: initial;
+    }
+    .section-2 .box .text-col h1{
+        font-size:20px;
+
+    }
+    .section-2 .box .text-col p{
+        font-size: 10px;
+    }
+
+    .section-2 .box .image-col .image img{
+        position: relative;
+        width: 75%;
+        height: 75%;
+        left: 7%;
+    }
+
+    .section-3 .box{
+        flex-direction: column;
+    }
+
+    .section-3 .box .text-col{
+        position:initial;
+        width: initial;
+        height: initial;
+    }
+    .section-3 .box .text-col h1{
+        font-size:20px;
+
+    }
+    .section-3 .box .text-col p{
+        font-size: 10px;
+    }
+
+    .section-3 .box .image-col .image img{
+        position: relative;
+        width: 70%;
+        height: 70%;
+        left: 25%;
+        
     }
 
     .footer-col{

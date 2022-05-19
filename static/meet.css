@@ -403,6 +403,9 @@ ul{
 
 
 @media (max-width: 960px){
+    .text-box{
+        top:30%;
+    }
     .member{
         max-width: 100%;
 
